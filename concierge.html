@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Concierge - Brilliance - Gems of Australia International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Toggle Button -->
+<div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleSidebar()">✖</div>
+
+  <a href="index.html">HOME</a>
+
+  <a onclick="toggleSubmenu('profileMenu', this)">
+    <span class="toggle-icon">+</span> PROFILE
+  </a>
+  <div class="submenu" id="profileMenu">
+    <a href="about.html">ABOUT</a>
+    <a href="history.html">HISTORY</a>
+    <a href="agency.html">AGENCY</a>
+    <a href="concierge.html">CONCIERGE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('storeMenu', this)">
+    <span class="toggle-icon">+</span> ONLINE STORE
+  </a>
+  <div class="submenu" id="storeMenu">
+    <a href="bracelets.html">BRACELETS STORE</a>
+    <a href="earring.html">EAR RING STORE</a>
+    <a href="pendants.html">PENDANTS STORE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('ringsMenu', this)">
+    <span class="toggle-icon">+</span> WEDDING RINGS
+  </a>
+  <div class="submenu" id="ringsMenu">
+    <a href="malering.html">MALE</a>
+    <a href="femalering.html">FEMALE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('pendantsMenu', this)">
+    <span class="toggle-icon">+</span> PENDANTS
+  </a>
+  <div class="submenu" id="pendantsMenu">
+    <a href="opal_pendants.html">OPAL PENDANTS</a>
+    <a href="pearl_pendants.html">PEARL PENDANTS</a>
+  </div>
+
+  <a onclick="toggleSubmenu('opalsMenu', this)">
+    <span class="toggle-icon">+</span> OPALS
+  </a>
+  <div class="submenu" id="opalsMenu">
+    <a href="opal_type.html">OPAL TYPES</a>
+    <a href="valuing_opals.html">VALUING OPALS</a>
+    <a href="opal_history.html">OPAL HISTORY</a>
+  </div>
+
+  <a href="diamonds.html">DIAMONDS</a>
+  <a href="pearls.html">PEARLS</a>
+  <a href="gems.html">GEMS</a>
+  <a href="pet_jewellery.html">PET JEWELLERY</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="subscribe.html">SUBSCRIBE</a>
+</div>
+
+<!-- Hero Image -->
+<div class="hero-img" style="background-color: #e3f2fd;">
+  <img src="images/Logo_Landscape.png" alt="logo" style="width:200px;height:80px;">
+</div>
+
+
+<!-- Conceirge Section -->
+<div class="section">
+<h2> By Private Appointment </h2>
+  <p class="mt-3">Brilliance Gems are based in Australia but regularly travel the globe for private consultations and to represent rare collections.<p>
+
+  <p class="mt-3">For interstate and international clients, Skype and phone consultations are also available.</p>
+
+  <p class="mt-3">Please contact the atelier for more information.</p>
+</div>
+
+
+<!-- Enquiries Section -->
+<div class="section">
+<h2>ENQUIRIES </h2>
+  <p class="mt-3">Tel: +61 402344420<p>
+  <p class="mt-3">Email: atelier@brilliancegems.com.au</p>
+</div>
+
+<!-- Additional Information Section -->
+<div class="section">
+<h2>ADDITIONAL INFORMATION </h2>
+  <p class="mt-3">Multi-lingual staff available<p>
+  <p class="mt-3">All ‘investment pieces’ come with international stone grading certificates</p>
+  <p class="mt-3">Ethically sourced<p>
+  <p class="mt-3">Duty free pricing<p>
+  <p class="mt-3">Lifetime warranty<p>
+</div>
+
+<!-- Image -->
+<div class="section">
+  <img src="images/c1.jpg" alt="logo" style="width:500px;height:300px;">
+</div>
+
+<!-- Footer -->
+<footer class="section" style="background-color: #e3f2fd;">
+  <div class="footer-links mb-3">
+    <a href="#">Privacy Policy</a> | <a href="#">About</a> | <a href="#">Conceirge</a> | <a href="#">Contact</a>
+  </div>
+  <input type="text" class="form-control d-inline-block w-25 mb-3" placeholder="Search...">
+  <div class="mb-2">
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"/></a>
+  </div>
+  <p><strong>Celebrating Life’s Brilliance</strong></p>
+  <p>&copy; 2025 Brilliance Gems of Australia International</p>
+</footer>
+
+<!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/sidebar.js"></script>
+<script src="js/subscribe.js"></script>
+
+</body>
+</html>

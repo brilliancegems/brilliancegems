@@ -1,0 +1,361 @@
+/* Body */ 
+ body {
+      font-family:Candara;
+      color: #333;
+    }
+
+/* Home Page */
+    .logo img {
+      height: 80px;
+    }
+    .hero-img img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+    .section {
+      padding: 40px 15px;
+      text-align: center;
+    }
+    .testimonial {
+      font-style: italic;
+    }
+    .testimonial-author {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .product-imgs img {
+      max-height: 150px;
+      margin: 10px;
+    }
+	
+/* Product section in Home */
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100% !important;
+  }
+}
+
+
+/* Footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 40px 15px;
+      text-align: center;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    .footer-links input {
+      max-width: 300px;
+    }
+
+/* Hamburger Menu */
+    .sidebar {
+      height: 100vh;
+      width: 300px;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      background-color: #fafafa;
+      color: goldenrod;
+      padding: 40px 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.open {
+      right: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: goldenrod;
+      text-decoration: none;
+      padding: 10px 0;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .submenu {
+      padding-left: 20px;
+      display: none;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: goldenrod;
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    .close-btn {
+      font-size: 30px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .submenu a {
+      font-size: 0.95em;
+      font-weight: 400;
+    }
+
+/* Subscribe */
+.thank-you-message {
+      display: none;
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+    }
+
+/* Contact */
+.contact-card {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    @media (max-width: 576px) {
+      .contact-card {
+        padding: 15px;
+      }
+    }
+	
+/* Pet Jewellery */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Pearls */
+h6 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: justify;
+}
+
+/* Diamonds */
+.section-divider {
+      margin: 3rem 0;
+    }
+
+.styled-img {
+  width: 80%;
+  margin-left: -200px;
+  height: 200px; /* Set desired height */
+  object-fit: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.styled-img:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Valuing Opals */
+ .pattern-card {
+      border: none;
+      background: #6bc698;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .pattern-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pattern-card img {
+      max-height: 180px;
+      object-fit: contain;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .caption {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+      text-align: center;
+    }
+ /* Opal History  */
+     .highlight {
+      font-style: italic;
+      color: #6c757d;
+    }
+    .image-top, .image-bottom {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+    .content-section {
+      max-width: 850px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .image-caption {
+      font-size: 0.95rem;
+      color: #6c757d;
+      text-align: center;
+    }
+	/* Opal Pendants */
+	 .pendant-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .pendant-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .pendant-img {
+      max-height: 300px;
+      object-fit: contain;
+    }
+
+/* Bracelets Store */
+    .product-container {
+      padding: 60px 20px;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #c49663;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .btn-custom {
+      background-color: #000;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #444;
+    }
+    .back-link {
+      font-size: 0.95rem;
+      color: #555;
+      text-decoration: none;
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+    .back-link:hover {
+      color: #000;
+    }
+    .form-label {
+      margin-top: 20px;
+    }
+    .share-icon {
+      margin-top: 20px;
+      color: #6c757d;
+      cursor: pointer;
+    }
+	
+	/* Delivery Page */
+	.section-title {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .form-control, .form-select {
+      border-radius: 0;
+    }
+    .card-header {
+      font-weight: bold;
+    }
+	.is-invalid {
+    border-color: red;
+   }
+    /* Review*/
+	 .star {
+      font-size: 30px;
+      color: #ccc;
+      cursor: pointer;
+    }
+    .star.checked {
+      color: gold;
+    }
+	
+/* Make hero image responsive */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive section padding */
+.section {
+  padding: 2rem 1rem;
+}
+
+/* Carousel image sizing */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Testimonials layout */
+@media (max-width: 768px) {
+  .testimonial {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+/* Gallery responsiveness */
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Footer on small screens */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+	

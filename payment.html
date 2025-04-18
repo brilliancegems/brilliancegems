@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Brilliance - Gems of Australia International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Toggle Button -->
+<div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleSidebar()">✖</div>
+
+  <a href="index.html">HOME</a>
+
+  <a onclick="toggleSubmenu('profileMenu', this)">
+    <span class="toggle-icon">+</span> PROFILE
+  </a>
+  <div class="submenu" id="profileMenu">
+    <a href="about.html">ABOUT</a>
+    <a href="history.html">HISTORY</a>
+    <a href="agency.html">AGENCY</a>
+    <a href="concierge.html">CONCIERGE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('storeMenu', this)">
+    <span class="toggle-icon">+</span> ONLINE STORE
+  </a>
+  <div class="submenu" id="storeMenu">
+    <a href="bracelets.html">BRACELETS STORE</a>
+    <a href="earring.html">EAR RING STORE</a>
+    <a href="pendants.html">PENDANTS STORE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('ringsMenu', this)">
+    <span class="toggle-icon">+</span> WEDDING RINGS
+  </a>
+  <div class="submenu" id="ringsMenu">
+    <a href="malering.html">MALE</a>
+    <a href="femalering.html">FEMALE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('pendantsMenu', this)">
+    <span class="toggle-icon">+</span> PENDANTS
+  </a>
+  <div class="submenu" id="pendantsMenu">
+    <a href="opal_pendants.html">OPAL PENDANTS</a>
+    <a href="pearl_pendants.html">PEARL PENDANTS</a>
+  </div>
+
+  <a onclick="toggleSubmenu('opalsMenu', this)">
+    <span class="toggle-icon">+</span> OPALS
+  </a>
+  <div class="submenu" id="opalsMenu">
+    <a href="opal_type.html">OPAL TYPES</a>
+    <a href="valuing_opals.html">VALUING OPALS</a>
+    <a href="opal_history.html">OPAL HISTORY</a>
+  </div>
+
+  <a href="diamonds.html">DIAMONDS</a>
+  <a href="pearls.html">PEARLS</a>
+  <a href="gems.html">GEMS</a>
+  <a href="pet_jewellery.html">PET JEWELLERY</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="subscribe.html">SUBSCRIBE</a>
+</div>
+
+<!-- Hero Image -->
+<div class="hero-img" style="background-color: #e3f2fd;">
+  <img src="images/Logo_Landscape.png" alt="logo" style="width:200px;height:80px;">
+</div>
+
+
+<body onload="loadDelivery()">
+<a href="cart.html"> <button class="btn btn-warning" type="button" style="margin-left:0px;margin-top:20px;">🛒 Cart</button></a>
+  <div class="container py-4">
+    <!-- Delivery Section -->
+    <h4 class="section-title">Delivery Address</h4>
+    <div id="deliveryDetails" class="form-section mb-4">
+      <div class="d-flex justify-content-between">
+        <div>
+          <strong>SHIPPING</strong><br>
+          <span id="deliveryContent">Loading...</span>
+        </div>
+        
+      </div>
+    </div>
+
+	<!-- Payment Method -->
+<div class="form-section mb-4">
+  <div class="mb-2"><strong>Select Payment Method:</strong></div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="paymentMethod" id="cod" value="COD" checked>
+    <label class="form-check-label" for="cod">
+      Cash on Delivery (COD)
+    </label>
+  </div>
+</div>
+
+    <!-- Billing Address Section -->
+    <h4 class="section-title">Billing Address</h4>
+    <div class="form-section">
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="sameAsShipping">
+        <label class="form-check-label" for="sameAsShipping">
+          Billing address same as shipping
+        </label>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+      </div>
+
+      <input type="text" class="form-control mb-3" placeholder="Address 1">
+      <input type="text" class="form-control mb-3" placeholder="Address 2">
+      
+      <select class="form-select mb-3">
+        <option value="">Select Country</option>
+        <option>Australia</option>
+      </select>
+
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Postal Code">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="City">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="State">
+        </div>
+      </div>
+
+      <input type="tel" class="form-control mb-4" placeholder="Phone Number">
+
+      <button class="btn btn-success" onclick="validatePayment()">CONTINUE</button>
+    </div>
+
+    <!-- Review Section -->
+    <!-- Accordion for Review -->
+  <div class="accordion mt-5" id="accordionExample">
+    <div class="accordion-item mt-2">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reviewCollapse">
+          Review & Purchase
+        </button>
+      </h2>
+      <div id="reviewCollapse" class="accordion-collapse collapse">
+        <div class="accordion-body">
+           After complete payment details next go to Order summary and final review.
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr>
+  </div>
+
+  
+<!-- Footer -->
+<footer class="section" style="background-color: #e3f2fd;">
+  <div class="footer-links mb-3">
+    <a href="#">Privacy Policy</a> | <a href="#">About</a> | <a href="#">Conceirge</a> | <a href="#">Contact</a>
+  </div>
+  <input type="text" class="form-control d-inline-block w-25 mb-3" placeholder="Search...">
+  <div class="mb-2">
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"/></a>
+  </div>
+  <p><strong>Celebrating Life’s Brilliance</strong></p>
+  <p>&copy; 2025 Brilliance Gems of Australia International</p>
+</footer>
+
+<!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional: Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- Custom JS -->
+<script src="js/sidebar.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    function loadDelivery() {
+      const data = JSON.parse(localStorage.getItem("deliveryDetails"));
+      if (data) {
+        document.getElementById("deliveryContent").innerHTML = `
+          ${data.firstName} ${data.lastName}<br>
+          ${data.phone}<br>
+          ${data.address1}<br>
+          ${data.address2 ? data.address2 + "<br>" : ""}
+          ${data.city}, ${data.state} ${data.postal}<br>
+          ${data.country}
+        `;
+      } else {
+        document.getElementById("deliveryContent").innerHTML = "No delivery information found.";
+      }
+    }
+
+    function validatePayment() {
+      // You can add form validation logic here if needed.
+      
+      // If validation is successful, redirect to review.html
+      window.location.href = "review.html";
+    }
+</script>
+
+
+</body>
+</html>
+

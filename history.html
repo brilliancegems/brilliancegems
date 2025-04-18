@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History - Brilliance - Gems of Australia International</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Toggle Button -->
+<div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleSidebar()">✖</div>
+
+  <a href="index.html">HOME</a>
+
+  <a onclick="toggleSubmenu('profileMenu', this)">
+    <span class="toggle-icon">+</span> PROFILE
+  </a>
+  <div class="submenu" id="profileMenu">
+    <a href="about.html">ABOUT</a>
+    <a href="history.html">HISTORY</a>
+    <a href="agency.html">AGENCY</a>
+    <a href="concierge.html">CONCIERGE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('storeMenu', this)">
+    <span class="toggle-icon">+</span> ONLINE STORE
+  </a>
+  <div class="submenu" id="storeMenu">
+    <a href="bracelets.html">BRACELETS STORE</a>
+    <a href="earring.html">EAR RING STORE</a>
+    <a href="pendants.html">PENDANTS STORE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('ringsMenu', this)">
+    <span class="toggle-icon">+</span> WEDDING RINGS
+  </a>
+  <div class="submenu" id="ringsMenu">
+    <a href="malering.html">MALE</a>
+    <a href="femalering.html">FEMALE</a>
+  </div>
+
+  <a onclick="toggleSubmenu('pendantsMenu', this)">
+    <span class="toggle-icon">+</span> PENDANTS
+  </a>
+  <div class="submenu" id="pendantsMenu">
+    <a href="opal_pendants.html">OPAL PENDANTS</a>
+    <a href="pearl_pendants.html">PEARL PENDANTS</a>
+  </div>
+
+  <a onclick="toggleSubmenu('opalsMenu', this)">
+    <span class="toggle-icon">+</span> OPALS
+  </a>
+  <div class="submenu" id="opalsMenu">
+    <a href="opal_type.html">OPAL TYPES</a>
+    <a href="valuing_opals.html">VALUING OPALS</a>
+    <a href="opal_history.html">OPAL HISTORY</a>
+  </div>
+
+  <a href="diamonds.html">DIAMONDS</a>
+  <a href="pearls.html">PEARLS</a>
+  <a href="gems.html">GEMS</a>
+  <a href="pet_jewellery.html">PET JEWELLERY</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="subscribe.html">SUBSCRIBE</a>
+</div>
+
+<!-- Hero Image -->
+<div class="hero-img" style="background-color: #e3f2fd;">
+  <img src="images/Logo_Landscape.png" alt="logo" style="width:200px;height:80px;">
+</div>
+
+<!-- History Section -->
+<div class="section">
+<h2> HISTORY </h2>
+<img src="images/history.jpeg" alt="history image" class="img-fluid rounded shadow mx-auto d-block mb-4" style="max-height: 300px;">
+
+  <p class="mt-3" style="max-width: 1200px; margin: 0 auto 20px auto; text-align: justify; font-size: 1.1rem;">Since the 1990s , director and lead designer, Marthese Agius has immersed herself in the international gem industry as an Opal specialist, with considerable experience in Diamonds, Pearls and other gems.  She has worked with exquisite gems, mainly from Australia, but also with a vast collection of International gems.</p>
+  
+  <p class="mt-3" style="max-width: 1200px; margin: 0 auto 20px auto; text-align: justify; font-size: 1.1rem;">Working with the likes of Valentino, Kenzo, Emmanuelle Ungaro, Sonia Rykiel and many leading international designers, Marthese was scouted as head co-ordinator for Dubai Fashion Week and Dubai Shopping Festival.<p>
+
+  <p class="mt-3" style="max-width: 1200px; margin: 0 auto 20px auto; text-align: justify; font-size: 1.1rem;">Her many years of experience in the Gem and Fashion worlds has given her an eye for detail and a sense of style that has served many international celebrities from Royalty through to music icons, working with some of the world’s greats.Our team has attended many international trade shows and events, representing Australia and it's Brilliant Natural Gems.</p>
+
+  <p class="mt-3" style="max-width: 1200px; margin: 0 auto 20px auto; text-align: justify; font-size: 1.1rem;">Our reputation is of the greatest importance to us as we strive to become an international benchmark for excellence.We ship across the globe as well as offer duty free pricing to our clients.</p>
+  
+</div>
+
+<!-- Footer -->
+<footer class="section" style="background-color: #e3f2fd;">
+  <div class="footer-links mb-3">
+    <a href="#">Privacy Policy</a> | <a href="#">About</a> | <a href="#">Conceirge</a> | <a href="#">Contact</a>
+  </div>
+  <input type="text" class="form-control d-inline-block w-25 mb-3" placeholder="Search...">
+  <div class="mb-2">
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png"/></a>
+  </div>
+  <p><strong>Celebrating Life’s Brilliance</strong></p>
+  <p>&copy; 2025 Brilliance Gems of Australia International</p>
+</footer>
+
+<!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/sidebar.js"></script>
+
+</body>
+</html>
